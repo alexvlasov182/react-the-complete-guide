@@ -12,7 +12,20 @@ function App() {
     setActivePlayer((currentActivePlayer) =>
       currentActivePlayer === "X" ? "O" : "X",
     );
-    setGameTurns();
+    setGameTurns((prevTuns) => {
+      let currentPlayer = "X";
+
+      if (prevTuns.length > 0 && prevTuns[0].player === "X") {
+        currentPlayer = "O";
+      }
+
+      const updatedTuns = [
+        { square: { row: rowIndex, col: colIndex }, player: activePlayer },
+        ...prevTuns,
+      ];
+
+      return updatedTurns;
+    });
   }
   return (
     <main>
