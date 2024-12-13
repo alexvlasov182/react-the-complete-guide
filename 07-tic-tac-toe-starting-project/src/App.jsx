@@ -16,6 +16,7 @@ function driveActivePlayer(gameTurns) {
 }
 
 function App() {
+  console.log("Test");
   const [gameTurns, setGameTurns] = useState([]);
   // const [activePlayer, setActivePlayer] = useState("X");
 
