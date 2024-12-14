@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Player from "./components/Player";
 import Log from "./components/Log";
 
-function driveActivePlayer(gameTurns) {
+function deriveActivePlayer(gameTurns) {
   let currentPlayer = "X";
 
   if (gameTurns.length > 0 && gameTurns[0].player === "X") {
@@ -16,20 +16,19 @@ function driveActivePlayer(gameTurns) {
 }
 
 function App() {
-  console.log("Test");
   const [gameTurns, setGameTurns] = useState([]);
   // const [activePlayer, setActivePlayer] = useState("X");
 
-  const activePlayer = driveActivePlayer(gameTurns);
+  const activePlayer = deriveActivePlayer(gameTurns);
 
   function handleSelectSquare(rowIndex, colIndex) {
     // setActivePlayer((currentActivePlayer) =>
     //   currentActivePlayer === "X" ? "O" : "X",
     // );
     setGameTurns((prevTurns) => {
-      const currentPlayer = driveActivePlayer(prevTurns);
+      const currentPlayer = deriveActivePlayer(prevTurns);
       const updatedTurns = [
-        { square: { row: rowIndex, col: colIndex }, player: activePlayer },
+        { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
         ...prevTurns,
       ];
 
