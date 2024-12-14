@@ -66,6 +66,7 @@ function deriveActivePlayer(gameTurns) {
 }
 
 function App() {
+  console.log("Finished");
   const [players, setPlayers] = useState({
     X: "Player 1",
     O: "Player 2",
