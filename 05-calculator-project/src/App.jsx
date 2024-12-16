@@ -8,7 +8,7 @@ function App() {
   const [userInput, setUserInput] = useState({
     initialInvestment: 10000,
     annualInvestment: 12000,
-    expectReturn: 6,
+    expectedReturn: 6,
     duration: 10,
   });
 
@@ -16,7 +16,7 @@ function App() {
     setUserInput((prevUserInput) => {
       return {
         ...prevUserInput,
-        [inputIdentifier]: newValue,
+        [inputIdentifier]: +newValue,
       };
     });
   }
