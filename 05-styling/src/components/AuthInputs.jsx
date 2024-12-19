@@ -31,6 +31,7 @@ const Input = styled.input`
 `;
 
 export default function AuthInputs() {
+  console.log("Working with styled-components");
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredPassword, setEnteredPassword] = useState("");
   const [submitted, setSubmitted] = useState(false);
