@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function UserInput({ onChange, userInput }) {
-  console.log("log for commit");
+  console.log("log for commit and this one");
 
   return (
     <section id="user-input">
