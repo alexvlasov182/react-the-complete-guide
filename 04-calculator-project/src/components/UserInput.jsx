@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function UserInput({ onChange, userInput }) {
-  console.log("Understanding React Error Messages");
+  console.log("Using the Browser Debugger & Breakpoints");
 
   return (
     <section id="user-input">
