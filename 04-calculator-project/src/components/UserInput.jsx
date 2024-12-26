@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function UserInput({ onChange, userInput }) {
-  console.log("Using the Browser Debugger & Breakpoints");
+  console.log("Understanding React's Strict Mode");
 
   return (
     <section id="user-input">
