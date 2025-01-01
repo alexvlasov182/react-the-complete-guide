@@ -8,6 +8,7 @@ export default function Player() {
   function handleClick() {
     setEnteredPlayerName(playerName.current.value);
     playerName.current.value = "";
+    console.log("Adding Challenges to the Demo Project");
   }
   return (
     <section id="player">
