@@ -1,4 +1,6 @@
 export default function ResultModel({ result, targetTime }) {
+  console.log("ResultModel rendered");
+
   return (
     <dialog className="result-modal" open>
       <h2>Your {result}</h2>
