@@ -1,8 +1,8 @@
-export default function ResultModel({ result, targetTime }) {
+export default function ResultModel({ ref, result, targetTime }) {
   console.log("ResultModel rendered");
 
   return (
-    <dialog className="result-modal" open>
+    <dialog ref={ref} className="result-modal">
       <h2>Your {result}</h2>
       <p>
         The target time was <strong>{targetTime} seconds.</strong>
