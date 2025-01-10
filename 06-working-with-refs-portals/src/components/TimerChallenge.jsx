@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import ResultModel from "./ResultModel";
 
 export default function TimerChallenge({ title, targetTime }) {
+  console.log("Forwarding Refs to DOM Elements");
   const timer = useRef();
   const dialog = useRef();
 
