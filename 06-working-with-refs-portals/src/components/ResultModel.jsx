@@ -8,6 +8,7 @@ export default function ResultModel({
   remainingTime,
   onReset,
 }) {
+  console.log("München, create new project");
   const dialog = useRef();
 
   const userLost = remainingTime <= 0;
