@@ -3,6 +3,8 @@ import Input from "./Input";
 import Modal from "./Modal";
 
 export default function NewProject({ onAdd, onCancel }) {
+  console.log("38-Fiber");
+
   const modal = useRef();
   const title = useRef();
   const description = useRef();
