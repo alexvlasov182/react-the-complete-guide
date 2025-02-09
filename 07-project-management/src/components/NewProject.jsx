@@ -3,7 +3,7 @@ import Input from "./Input";
 import Modal from "./Modal";
 
 export default function NewProject({ onAdd, onCancel }) {
-  console.log("38-Fiber");
+  console.log("37-Fiber second day");
 
   const modal = useRef();
   const title = useRef();
