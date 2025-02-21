@@ -8,6 +8,8 @@ export default function Product({
   description,
   onAddToCart,
 }) {
+  console.log("Working with context");
+
   return (
     <article className="product">
       <img src={image} alt={title} />
