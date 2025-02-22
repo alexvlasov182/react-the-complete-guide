@@ -8,7 +8,7 @@ export default function Product({
   description,
   onAddToCart,
 }) {
-  console.log("Working with context");
+  console.log("Happy Birthday 37 :)");
 
   return (
     <article className="product">
