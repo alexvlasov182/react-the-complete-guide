@@ -8,7 +8,7 @@ export default function Product({
   description,
   onAddToCart,
 }) {
-  console.log("Happy Birthday 37 :)");
+  console.log("Hap");
 
   return (
     <article className="product">
