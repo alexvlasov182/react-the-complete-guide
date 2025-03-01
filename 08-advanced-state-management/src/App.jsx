@@ -7,6 +7,8 @@ import Product from "./components/Product.jsx";
 import { CartContext } from "./store/shopping-cart-context.jsx";
 
 function App() {
+  console.log("Checking");
+
   const [shoppingCart, setShoppingCart] = useState({
     items: [],
   });
