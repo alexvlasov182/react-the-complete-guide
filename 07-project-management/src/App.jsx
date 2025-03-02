@@ -96,6 +96,7 @@ function App() {
   );
 
   let content = (
+    
     <SelectedProject
       project={selectedProject}
       onDelete={handleDeleteProject}

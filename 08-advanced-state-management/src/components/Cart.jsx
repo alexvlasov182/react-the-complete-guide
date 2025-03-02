@@ -1,8 +1,9 @@
-import { useContext } from "react";
-import { CartContext } from "../store/shopping-cart-context.jsx";
+import { useContext } from 'react';
+import { CartContext } from '../store/shopping-cart-context.jsx';
 
 export default function Cart({ onUpdateItemQuantity }) {
   const { items } = useContext(CartContext);
+  console.log('Added esling');
 
   const totalPrice = items.reduce(
     (acc, item) => acc + item.price * item.quantity,
@@ -15,7 +16,7 @@ export default function Cart({ onUpdateItemQuantity }) {
       {items.length === 0 && <p>No items in cart!</p>}
       {items.length > 0 && (
         <ul id="cart-items">
-          {items.map((item) => {
+          {items.map(item => {
             const formattedPrice = `$${item.price.toFixed(2)}`;
 
             return (

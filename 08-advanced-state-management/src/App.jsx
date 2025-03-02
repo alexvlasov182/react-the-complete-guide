@@ -7,7 +7,7 @@ import Product from "./components/Product.jsx";
 import { CartContext } from "./store/shopping-cart-context.jsx";
 
 function App() {
-  console.log("Checking");
+  const color = "bulue";
 
   const [shoppingCart, setShoppingCart] = useState({
     items: [],
@@ -18,7 +18,7 @@ function App() {
       const updatedItems = [...prevShoppingCart.items];
 
       const existingCartItemIndex = updatedItems.findIndex(
-        (cartItem) => cartItem.id === id,
+        (cartItem) => cartItem.id === id
       );
       const existingCartItem = updatedItems[existingCartItemIndex];
 
@@ -48,7 +48,7 @@ function App() {
     setShoppingCart((prevShoppingCart) => {
       const updatedItems = [...prevShoppingCart.items];
       const updatedItemIndex = updatedItems.findIndex(
-        (item) => item.id === productId,
+        (item) => item.id === productId
       );
 
       const updatedItem = {
