@@ -3,7 +3,6 @@ import { CartContext } from '../store/shopping-cart-context.jsx';
 
 export default function Cart({ onUpdateItemQuantity }) {
   const { items } = useContext(CartContext);
-  console.log('Added esling');
 
   const totalPrice = items.reduce(
     (acc, item) => acc + item.price * item.quantity,
