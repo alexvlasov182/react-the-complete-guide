@@ -9,7 +9,7 @@ export default function Cart({ onUpdateItemQuantity }) {
     (acc, item) => acc + item.price * item.quantity,
     0,
   );
-  console.log(totalPrice);
+
   const formattedTotalPrice = `$${totalPrice.toFixed(2)}`;
   console.log('continue this projcect');
 
