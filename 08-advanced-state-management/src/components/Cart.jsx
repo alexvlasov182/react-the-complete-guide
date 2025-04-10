@@ -11,7 +11,6 @@ export default function Cart({ onUpdateItemQuantity }) {
   );
 
   const formattedTotalPrice = `$${totalPrice.toFixed(2)}`;
-  console.log('continue this projcect');
 
   return (
     <div id="cart">
