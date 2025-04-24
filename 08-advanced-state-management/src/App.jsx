@@ -5,6 +5,7 @@ import Product from './components/Product.jsx';
 import CartContextProvider from './store/shopping-cart-context.jsx';
 
 function App() {
+  console.log('almost done');
   return (
     <CartContextProvider>
       <Header />
